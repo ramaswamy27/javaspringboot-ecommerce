@@ -2,7 +2,7 @@ pipeline {
   agent any
   
   stages {
-    stage {
+    stage('Testing') {
       steps { echo setting up Jenkins pipeline }
     }
   }

@@ -1,5 +1,9 @@
 pipeline {
-  agent {
-    any
+  agent any
+  
+  stages {
+    stage {
+      steps { echo setting up Jenkins pipeline }
+    }
   }
 }

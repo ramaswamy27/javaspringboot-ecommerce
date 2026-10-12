@@ -1,0 +1,10 @@
+pipeline:
+  team_folder: "java-team"  # Routes to src/java-team/CustomLogic.groovy for specialized actions
+  container:
+    image: "192.168.122.154:5000/maven:3.9-eclipse-temurin-21"
+    cpus: "1"
+    memory: "1g"
+    memory_swap: "1g"
+  environment:
+    # "package" is a recognized keyword. Trivy and SonarQube will automatically be enforced.
+    BUILD_COMMAND: "mvn clean package -DskipTests=false"

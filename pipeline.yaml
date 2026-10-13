@@ -1,8 +1,0 @@
-stack: "java"
-version: "21"
-deployment:
-  type: "vm"
-  hosts: ["192.168.12.50", "192.168.12.51"]
-  deploy_path: "/opt/billing-service"
-  ssh_credential_id: "kvm-ssh-key-team-alpha"
-  artifact_name: "billing-app"

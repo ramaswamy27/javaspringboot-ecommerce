@@ -3,7 +3,7 @@ stack: "java"         # Options: java, go, python, rust
 stackVersion: "1.21"  # Switches docker tags dynamically (e.g., 1.17, 1.21)
 resources:
   cpu: "0.10"            # Requested CPUs
-  memory: "250Mi"       # Requested Memory (e.g., 8Gi, 16Gi)
+  memory: "500Mi"       # Requested Memory (e.g., 8Gi, 16Gi)
 buildCmd: "mvn clean package -DskipTests"
 testCmd: "mvn test"
 imageName: "my-cart-service"
